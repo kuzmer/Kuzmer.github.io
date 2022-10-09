@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Kuzmer 3D Gallery</title>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="assets/images/favicon/manifest.json">
+  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  
+
+  <!--Plugin files-->
+  <link type="text/css" href="assets/css/3d-spherical-image-gallery.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="vendor/fancybox/css/jquery.fancybox.css">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="	crossorigin="anonymous"></script>
+  <script type="text/javascript" src="vendor/fancybox/js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="vendor/three/three.min.js"></script>
+  <script type="text/javascript" src="vendor/three/Detector.min.js"></script>
+  <script type="text/javascript" src="assets/js/3d-spherical-image-gallery.demo.min.js"></script>
+  <script>
+    sphericalImageGallery.create({
+      containerHeight: '90vh'
+    });
+  </script>
+  <style>
+    .column p {
+      font-size: 1.2rem;
+    }
+    #main {
+      margin-top: 54px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div id="main">
+    <div id="spherical-image-gallery"></div>
+
+
+  </div>
+</body>
+</html>
