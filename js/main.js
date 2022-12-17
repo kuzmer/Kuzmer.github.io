@@ -11,6 +11,16 @@ LinksPage.OnloadPage = function()
 	setTimeout(LinksPage.ChangeLinkDecorate, 100);
 	
 	document.body.click();
+	
+	setTimeout(function() 
+	{
+		document.body.click();	
+	}, 100);
+	
+	setTimeout(function() 
+	{
+		document.body.click();	
+	}, 1000);
 }
 
 LinksPage.ChangeLinkDecorate = function()
