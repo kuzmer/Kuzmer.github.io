@@ -8,7 +8,7 @@ LinksPage.Data =
 
 LinksPage.OnloadPage = function()
 {
-	setTimeout(LinksPage.ChangeLinkDecorate, 2000);
+	setTimeout(LinksPage.ChangeLinkDecorate, 500);
 }
 
 LinksPage.ChangeLinkDecorate = function()
