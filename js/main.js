@@ -8,7 +8,7 @@ LinksPage.Data =
 
 LinksPage.OnloadPage = function()
 {
-	setTimeout(LinksPage.ChangeLinkDecorate, 500);
+	setTimeout(LinksPage.ChangeLinkDecorate, 100);
 }
 
 LinksPage.ChangeLinkDecorate = function()
@@ -43,7 +43,16 @@ LinksPage.VibroEffect = function()
 {
 	if(LinksPage.Data.EnableVibro)
 	{
-		window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]);		
+		if (!document.hasFocus()) {
+			window.focus();
+			if (navigator.vibrate) {
+				window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]);
+				}
+		}
+		else { 
+			window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]);
+		}
+				
 	}
 	
 }
