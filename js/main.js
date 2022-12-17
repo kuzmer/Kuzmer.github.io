@@ -41,7 +41,7 @@ setTimeout(LinksPage.ChangeLinkDecorate, 4000);
 
 LinksPage.VibroEffect = function()
 {
-	if(LinksPage.Data)
+	if(LinksPage.Data.EnableVibro)
 	{
 		window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]);		
 	}
